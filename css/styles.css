@@ -1,0 +1,202 @@
+html {
+    background-image: url("../imgs/nightSky.jpg");
+    /*for people who can't get access to the photo:*/
+    background-color: black;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: monospace, sans-serif;
+    text-align: center;
+}
+
+.gradient {
+    background: linear-gradient(#6198FA, blue, black);
+}
+
+#choiceBox {
+    padding-top: 60px;
+    padding-right: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    width: 50%;
+    height: 100%;
+    color: black;
+}
+
+h1 {
+    font-size: 36px;
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p {
+    margin: 0 10%;
+}
+
+.carousel.carousel-slider .carousel-item p {
+    font-size: 25px;
+}
+
+.slider {
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    left: 20%;
+    /*display: inline-block;*/
+    width: 50%;
+    height: 100%;
+    -webkit-animation: slide 2s forwards;
+    -webkit-animation-delay: .5s;
+    animation: slide 2s forwards;
+    animation-delay: .5s;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+.topBox {
+    position: relative;
+    background-color: #042364;
+}
+
+#hiRunner {
+    background-color: #CCDCFC;
+    width: 30%;
+}
+
+.hiRunner {
+    margin: 0 auto;
+}
+
+#info {
+    width: 25%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#mainBox {
+    background-color: darkblue;
+}
+
+#navBar h2 {
+    color: #CCDCFC;
+}
+
+#navBar li:hover {
+    color: orangered;
+}
+
+#navBar a:visited {
+    color: teal;
+}
+
+#navBar {
+    display: flex;
+    flex-flow: row wrap;
+    background: #CCDCFC;
+    /* for broswers that do not support gradients*/
+    background: -webkit- linear-gradient (left top, blue, white);
+    /*for safari*/
+    background: -o-linear-gradient(bottom right, blue, white);
+    /*for opera*/
+    background: -moz-linear-gradient(black, blue, white);
+    /*for firefox*/
+    background: linear-gradient(black, darkblue, #CCDCFC);
+    /*standard*/
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+/*
+button {
+    background-color: #042364;
+    margin: 5px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    border: black 2px solid;
+    font-family: monospace;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 16px;
+}
+*/
+
+.italic {
+    font-style: oblique;
+}
+
+.lightBlue {
+    background-color: #CCDCFC;
+    color: #042364;
+}
+
+.brightBlue {
+    background-color: #6198FA;
+    color: #042364;
+}
+
+.purpleBlue {
+    background-color: #0444CC;
+    color: #CCDCFC;
+}
+
+.darkBlue {
+    background-color: #042364;
+    color: #6198FA;
+}
+
+.navyBlue {
+    background-color: navy;
+    color: white;
+}
+
+@media (max-width: 1050px) {
+    #choiceBox {
+        padding-right: 0;
+        position: static;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    #hiRunner {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    #hiRunner img {
+        border-left: 2px #1133FF solid;
+        border-right: 2px #1133FF solid;
+        border-bottom: 2px #1133FF solid;
+    }
+    #info {
+        padding-left: 0;
+    }
+    #footer {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 854px) {
+    #hiRunner img {
+        width: 98%;
+        height: 98%;
+    }
+}
